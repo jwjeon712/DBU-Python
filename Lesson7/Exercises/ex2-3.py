@@ -7,6 +7,9 @@ data = {'Country': ['USA', 'UK', 'Canada', None],
 df = pd.DataFrame(data)
 
 # Exercise 2: clean the missing values and sort by GDP
-
+cleaned_df = df.dropna().sort_values(by='GDP', ascending=False)
+print(cleaned_df)
 
 # Exercise 3: calculate the total GDP
+total_gdp = cleaned_df['GDP'].sum()
+print("Total GDP:", total_gdp)

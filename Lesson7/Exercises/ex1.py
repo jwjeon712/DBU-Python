@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Create a DataFrame
-data = {'Product': ['A', 'B', 'C'], 'Sales': [100, 200, 300]}
+data = {'Product': ['A', 'B', 'C'], 'Sales': [100, 200, 300], 'Profit': [10, 20, 30]}
 df = pd.DataFrame(data)
 
 # Print DataFrame
